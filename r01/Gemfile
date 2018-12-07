@@ -44,7 +44,7 @@ gem 'better_errors', '~> 2.5'
 gem "bulma-rails", "~> 0.7.2"
 # Simple Form
 gem 'simple_form', '~> 4.1'
-
+#
 
 
 
@@ -67,8 +67,9 @@ group :development do
   # Simple uptodate
   gem 'guard', '~> 2.15'
   # Guard livereload is a command line tool easy handle events on file system modifications
-  gem 'guard-livereload', '~> 2.5', '>= 2.5.2'
-  
+  gem 'guard-livereload', '~> 2.5', '>= 2.5.2', require: false
+  #
+  gem 'binding_of_caller', '~> 0.8.0'
 end
 
 group :test do
